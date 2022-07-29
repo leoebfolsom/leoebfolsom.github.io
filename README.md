@@ -14,7 +14,7 @@ Now, on to git.
 
 ### Reorder last two commits
 
-https://stackoverflow.com/questions/33388210/how-to-reorder-last-two-commits-in-git 
+[How to reorder last two commits in git?](https://stackoverflow.com/questions/33388210/how-to-reorder-last-two-commits-in-git)
 
 ```
 git rebase -i HEAD~2
@@ -86,7 +86,7 @@ git checkout -- .
 
 ### Create a local version of a remote branch
 
-https://stackoverflow.com/a/9537923/5037635 
+[Using git switch](https://stackoverflow.com/a/9537923/5037635)
 
 ```
 git switch <name-of-remote-branch>
