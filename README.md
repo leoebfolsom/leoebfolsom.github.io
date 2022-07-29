@@ -1,5 +1,11 @@
 ## quick note on vim
 
+Hello! I'm going to add command line tips to this page as I come up with them. I hope it will be
+a useful resource for anyone trying to make stuff work while working with the command line.
+
+If you want to reach out with ideas, suggestions, or whatever else, please do! There are a couple 
+of links on [my personal website](https://leoebfolsom.com/) that you can use to reach me.
+
 ### How to deal with the editor / file viewer while using command line
 
 Because even if you never use vim voluntarily, it may pop up while you’re using git and the command line.
