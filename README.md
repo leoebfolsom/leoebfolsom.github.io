@@ -1,13 +1,22 @@
-## quick note on vim
+# command line tools n tips by leo
 
-Hello! I'm going to add command line tips to this page as I come up with them. I hope it will be
-a useful resource for anyone trying to make stuff work while working with the command line.
+Hello! I'm going to add command line tips (not only git) to this page as I come up with them. 
+I hope it will be a useful resource for anyone trying to make stuff work while working with 
+the command line.
 
-If you want to reach out with ideas, suggestions, or whatever else, please do! There are a couple 
-of links on [my personal website](https://leoebfolsom.com/) that you can use to reach me.
+If you want to reach out with ideas, suggestions, or whatever else, please do! There are a 
+couple of links on [my personal website](https://leoebfolsom.com/) that you can use to reach me.
 
-### How to deal with the editor / file viewer while using command line
+### command line tools covered in this guide
+* [vim](#vim)
+* [git](#git)
 
+I'll be updating this frequently as I learn, so tools that are missing or incompletely covered 
+will be added/updated over time.
+
+## vim
+
+### How to deal with the vim editor / file viewer while using command line
 Because even if you never use vim voluntarily, it may pop up while you’re using git and the command line.
 
 **If vim pops up when you’re viewing a commit message:** You can use the default commit message by typing `:w` and then `:q`.
@@ -16,10 +25,9 @@ Because even if you never use vim voluntarily, it may pop up while you’re usin
 
 Now, on to git.
 
-## on to git
+## git
 
 ### Reorder last two commits
-
 [How to reorder last two commits in git?](https://stackoverflow.com/questions/33388210/how-to-reorder-last-two-commits-in-git)
 
 ```
@@ -76,13 +84,11 @@ git diff --name-only --diff-filter=U
 ### Undoing your last commit
 I like to do this in two steps so I can see what’s happening and change my mind at the last minute if needed.
 
-
 Move the changes from your last commit from "committed" to "unstaged." This moves the head of your current branch back one commit:
 
 ```
 git reset HEAD~1
 ```
-
 
 Then, discard changes in your working directory that are not staged:
 
@@ -91,7 +97,6 @@ git checkout -- .
 ```
 
 ### Create a local version of a remote branch
-
 [Using git switch](https://stackoverflow.com/a/9537923/5037635)
 
 ```
