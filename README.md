@@ -1,17 +1,16 @@
 # command line tools n tips by leo
 
 Hello! I'm going to add command line tips (not only git) to this page as I come up with them. 
-I hope it will be a useful resource for anyone trying to make stuff work while working with 
+I hope it will be a useful resource for anyone trying to make stuff work while using 
 the command line.
 
-If you want to reach out with ideas, suggestions, or whatever else, please do! There are a 
-couple of links on [my personal website](https://leoebfolsom.com/) that you can use to reach me.
+If you want to reach out with ideas, suggestions, or whatever else, please do! There are links on [my personal website](https://leoebfolsom.com/) that you can use to reach me.
 
 ### command line tools covered in this guide
 * [vim](#vim)
 * [git](#git)
 
-I'll be updating this frequently as I learn, so tools that are missing or incompletely covered 
+I'll be updating this frequently as I learn. Tools that are missing or incompletely covered 
 will be added/updated over time.
 
 ## vim
