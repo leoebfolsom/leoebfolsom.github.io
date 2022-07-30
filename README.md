@@ -1,6 +1,6 @@
 # command line tools n tips by leo
 
-Hello! I'm going to add command line tips (not only git) to this page as I come up with them. 
+Hello! I'll add command line tips (not only git) to this page as I come up with them. 
 I hope it will be a useful resource for anyone trying to make stuff work while using 
 the command line.
 
