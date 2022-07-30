@@ -53,7 +53,7 @@ pick f4648aee My first commit
 git push origin HEAD^:name-of-branch
 ```
 
-### Push all but the most recent commit AND simultaneously create a new remote branch (and a new PR)
+### Push all but the most recent commit and create remote branch with those commits 
 
 ```
 git push origin HEAD^:name-of-branch
@@ -61,7 +61,8 @@ git push origin HEAD^:name-of-branch
 
 ### Add a specific commit to a branch
 
-Replace `<commit-hash>` with a commit hash that you obtain by viewing the git log where that commit can be found.
+Replace `<commit-hash>` with a commit hash that you obtain 
+by viewing the git log where that commit can be found.
 
 ```
 git cherry-pick <commit-hash>
@@ -81,9 +82,11 @@ git diff --name-only --diff-filter=U
 ```
 
 ### Undoing your last commit
-I like to do this in two steps so I can see what’s happening and change my mind at the last minute if needed.
+*I like to do this in two steps so I can see what’s 
+happening and change my mind at the last minute if needed.*
 
-Move the changes from your last commit from "committed" to "unstaged." This moves the head of your current branch back one commit:
+Move the changes from your last commit from "committed" to "unstaged." 
+This moves the head of your current branch back one commit:
 
 ```
 git reset HEAD~1
