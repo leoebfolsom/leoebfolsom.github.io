@@ -75,6 +75,16 @@ While on a branch, comparing to a branch named `main`:
 git diff --name-status main
 ```
 
+### List changes that are staged, but not committed.
+This can be useful if you don't remember what you've done, and
+you want to write a good commit message on the first go. "staged
+but not committed" means you've already executed `git add` but 
+not `git commit`.
+
+```
+git diff --staged
+```
+
 ### Identify merge conflicts (list of files)
 
 ```
