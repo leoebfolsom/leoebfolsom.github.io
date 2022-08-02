@@ -114,3 +114,19 @@ git checkout -- .
 ```
 git switch <name-of-remote-branch>
 ```
+
+### Generally, how to contribute to an open source package/repo
+_Note: each repo will have their own contributing guidelines, and you should read the README and/or CONTRIBUTING page in their github repo._
+
+1. Go to the repo you want to contribute to.
+2. Create a fork of that repo.
+3. Clone the fork to your local machine.
+a. The way I organize this is:
+-- A main folder called `git` that includes all my git repos.
+-- A folder within that `git` folder called `forked_repos` which contains any repos that I have forked.
+4. Set the main repo (not your fork) as the upstream remote to your fork, following these instructions. This enables you to pull changes from the main repo to your fork.
+```
+git remote add upstream <https://github.com/some-org/some-repo.git>
+git fetch upstream
+```
+5. Make a change in your fork, and then push to GitHub. GitHub will then allow you to open a PR to merge your changes into the main repo.
