@@ -121,9 +121,9 @@ _Note: each repo will have their own contributing guidelines, and you should rea
 1. Go to the repo you want to contribute to.
 2. Create a fork of that repo.
 3. Clone the fork to your local machine.
-a. The way I organize this is:
--- A main folder called `git` that includes all my git repos.
--- A folder within that `git` folder called `forked_repos` which contains any repos that I have forked.
+    * The way I organize this is:
+        - A main folder called `git` that includes all my git repos.
+        - A folder within that `git` folder called `forked_repos` which contains any repos that I have forked.
 4. Set the main repo (not your fork) as the upstream remote to your fork, following these instructions. This enables you to pull changes from the main repo to your fork.
 ```
 git remote add upstream <https://github.com/some-org/some-repo.git>
