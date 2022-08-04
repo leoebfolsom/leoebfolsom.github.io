@@ -130,3 +130,5 @@ git remote add upstream <https://github.com/some-org/some-repo.git>
 git fetch upstream
 ```
 5. Make a change in your fork, and then push to GitHub. GitHub will then allow you to open a PR to merge your changes into the main repo.
+
+See [this helpful tutorial](https://www.atlassian.com/git/tutorials/git-forks-and-upstreams) for more details on git forks and upstreams. 
