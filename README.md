@@ -155,6 +155,12 @@ git merge main
 See [this helpful tutorial](https://www.atlassian.com/git/tutorials/git-forks-and-upstreams) 
 for more details on git forks and upstreams. 
 
+### Good reading on git
+* [Stack Overflow: A good answer about reordering commits](https://stackoverflow.com/a/2740812)
+* [Stack Overflow: Undoing recent local commits](https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git)
+* [Cherry-picking commits](https://www.devroom.io/2010/06/10/cherry-picking-specific-commits-from-another-branch/)
+* [Rewriting history using git](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) (amending commits and messages; reordering commits)
+
 ## vim
 
 ### editor modes
