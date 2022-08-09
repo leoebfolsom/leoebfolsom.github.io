@@ -157,22 +157,21 @@ for more details on git forks and upstreams.
 
 ## vim
 
-When using vim, you can either be in "insert" mode or "normal" mode (not sure what that’s called--le
+### editor modes
+When using vim, you can either be in one of several modes. Here'll, I'll explain
+"insert" and "normal" modes. (I'll add others as I learn about them.)
 
-Insert mode is similar to the way you’d normally interact with a text editor.
+**Insert mode** is similar to the way you’d normally interact with a text editor.
 
-Normal mode means that you can use a variety of commands to navigate the file INCLUDING some commands that actually change the content of the file.
+**Normal mode** means that you can use a variety of commands to navigate the file INCLUDING some commands that actually change the content of the file.
 
-To enter insert mode while viewing a file using vim: type `i` (which stands for “insert”).
+To enter insert mode while viewing a file using vim: type `i` (which stands for "insert").
 
-To exit edit mode while viewing a file using vim: type `esc` (the actual escape button).
+To exit insert mode and re-enter normal mode: type `esc` (the actual escape button).
 
-_Note: if you want to set your command line (e.g., while using VS Code or
-Terminal) to vi editing mode (which could drive you nuts, could make your life
-easier, or could be a way of forcing yourself to learn those keystrokes), you
-can do so with this command: set -o vi to activate it (and set -o emacs to revert)._
+### keystrokes
 
-Now, on to some basic and essential `vi` keystrokes:
+Now, on to some important `vi` keystrokes:
 
 `:w`: Save.
 
@@ -184,6 +183,11 @@ Now, on to some basic and essential `vi` keystrokes:
 * [How to Delete a Line in VIM {All, Multiple, Range)](https://phoenixnap.com/kb/how-to-delete-line-vim)
 
 `A`: Move to the end of line and enter “insert” mode (A stands for Append).
+
+If you want to set your command line to use vi keystrokes (which could drive you
+nuts, could make your life easier, or could be a way of forcing yourself to
+learn those keystrokes), you can do so with this command: set -o vi to activate
+it (and set -o emacs to revert).
 
 * [vim cheat sheet](http://www.viemu.com/vi-vim-cheat-sheet.gif)
 * [Vim Editor Modes Explained](https://www.freecodecamp.org/news/vim-editor-modes-explained/)
