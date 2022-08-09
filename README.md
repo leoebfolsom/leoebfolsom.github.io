@@ -4,23 +4,31 @@ Hello! I'll add command line tips (not only git) to this page as I come up with 
 I hope it will be a useful resource for anyone trying to make stuff work while using 
 the command line.
 
-If you want to reach out with ideas, suggestions, or whatever else, please do! There are links on [my personal website](https://leoebfolsom.com/) that you can use to reach me.
+If you want to reach out with ideas, suggestions, or whatever else, please do! There 
+are links on [my personal website](https://leoebfolsom.com/) that you can use to reach me.
 
 ### command line tools covered in this guide
-* [vim](#vim)
+* [vim](#vim-as-it-inevitably-pertains-to-git)
 * [git](#git)
+* [vim](#vim)
 
-I'll be updating this frequently as I learn. Tools that are missing or incompletely covered 
-will be added/updated over time.
+I'll be updating this frequently as I learn. Tools that are missing or incompletely covered will be added/updated over time.
 
-## vim
+## vim as it inevitably pertains to git
 
 ### How to deal with the vim editor / file viewer while using command line
-Because even if you never use vim voluntarily, it may pop up while you’re using git and the command line.
+Because even if you never use vim voluntarily, it may pop up while you’re 
+using git and the command line.
 
-**If vim pops up when you’re viewing a commit message:** You can use the default commit message by typing `:w` and then `:q`.
+**If vim pops up when you’re viewing a commit message:** You can use the default 
+commit message by typing `:w` and then `:q`.
 
-**If vim pops up when you’re viewing logs:** You can get back to the command line by typing `q` (no colon).
+**If vim pops up when you’re viewing logs:** You can get back to the command 
+line by typing `q` (no colon).
+
+**If you’re viewing a commit message:** You can use the default commit message by typing `:x` which means "save and quit."
+
+**If you’re viewing logs:** You can get back to the command line by typing `q` (no colon).
 
 Now, on to git.
 
@@ -116,19 +124,66 @@ git switch <name-of-remote-branch>
 ```
 
 ### Generally, how to contribute to an open source package/repo
-_Note: each repo will have their own contributing guidelines, and you should read the README and/or CONTRIBUTING page in their github repo._
+_Note: each repo will have their own contributing guidelines, and you should 
+read the README and/or CONTRIBUTING page in their github repo._
 
 1. Go to the repo you want to contribute to.
 2. Create a fork of that repo.
 3. Clone the fork to your local machine.
     * The way I organize this is:
         - A main folder called `git` that includes all my git repos.
-        - A folder within that `git` folder called `forked_repos` which contains any repos that I have forked.
-4. Set the main repo (not your fork) as the upstream remote to your fork, following these instructions. This enables you to pull changes from the main repo to your fork.
+        - A folder within that `git` folder called `forked_repos` which contains 
+        any repos that I have forked.
+4. Set the main repo (not your fork) as the upstream remote to your fork, 
+following these instructions. This enables you to pull changes from the main repo to your fork.
+Most likely, you will want to do this from the main branch of your local repo.
 ```
+git checkout main
 git remote add upstream <https://github.com/some-org/some-repo.git>
 git fetch upstream
 ```
-5. Make a change in your fork, and then push to GitHub. GitHub will then allow you to open a PR to merge your changes into the main repo.
+You can then merge those changes that you pulled from upstream into whatever you're working
+on locally:
+```
+git pull
+git checkout your-wip-branch
+git merge main
+```
+5. Make a change in your fork, and then push to GitHub. GitHub will then allow you to
+ open a PR to merge your changes into the main repo.
 
-See [this helpful tutorial](https://www.atlassian.com/git/tutorials/git-forks-and-upstreams) for more details on git forks and upstreams. 
+See [this helpful tutorial](https://www.atlassian.com/git/tutorials/git-forks-and-upstreams) 
+for more details on git forks and upstreams. 
+
+## vim
+
+When using vim, you can either be in "insert" mode or "normal" mode (not sure what that’s called--le
+
+Insert mode is similar to the way you’d normally interact with a text editor.
+
+Normal mode means that you can use a variety of commands to navigate the file INCLUDING some commands that actually change the content of the file.
+
+To enter insert mode while viewing a file using vim: type `i` (which stands for “insert”).
+
+To exit edit mode while viewing a file using vim: type `esc` (the actual escape button).
+
+_Note: if you want to set your command line (e.g., while using VS Code or
+Terminal) to vi editing mode (which could drive you nuts, could make your life
+easier, or could be a way of forcing yourself to learn those keystrokes), you
+can do so with this command: set -o vi to activate it (and set -o emacs to revert)._
+
+Now, on to some basic and essential `vi` keystrokes:
+
+`:w`: Save.
+
+`:q`: Quit.
+
+`:x`: Save and quit.
+
+`D`: Delete an entire line while in view mode.
+* [How to Delete a Line in VIM {All, Multiple, Range)](https://phoenixnap.com/kb/how-to-delete-line-vim)
+
+`A`: Move to the end of line and enter “insert” mode (A stands for Append).
+
+* [vim cheat sheet](http://www.viemu.com/vi-vim-cheat-sheet.gif)
+* [Vim Editor Modes Explained](https://www.freecodecamp.org/news/vim-editor-modes-explained/)
