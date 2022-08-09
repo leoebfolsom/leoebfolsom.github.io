@@ -8,7 +8,7 @@ If you want to reach out with ideas, suggestions, or whatever else, please do! T
 are links on [my personal website](https://leoebfolsom.com/) that you can use to reach me.
 
 ### command line tools covered in this guide
-* [vim](#vim-as-it-inevitably-pertains-to-git)
+* [vim as it inevitably pertains to git](#vim-as-it-inevitably-pertains-to-git)
 * [git](#git)
 * [vim](#vim)
 
