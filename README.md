@@ -181,6 +181,7 @@ nuts, could make your life easier, or could be a way of forcing yourself to
 learn those keystrokes), you can do so with this command: set -o vi to activate
 it (and set -o emacs to revert).
 
+### Additional reading
 * [vim cheat sheet](http://www.viemu.com/vi-vim-cheat-sheet.gif)
 * [Vim Editor Modes Explained](https://www.freecodecamp.org/news/vim-editor-modes-explained/)
 
