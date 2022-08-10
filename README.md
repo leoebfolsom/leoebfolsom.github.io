@@ -11,6 +11,7 @@ are links on [my personal website](https://leoebfolsom.com/) that you can use to
 * [vim as it inevitably pertains to git](#vim-as-it-inevitably-pertains-to-git)
 * [git](#git)
 * [vim](#vim)
+* [chmod](#chmod)
 
 I'll be updating this frequently as I learn. Tools that are missing or incompletely covered will be added/updated over time.
 
@@ -36,33 +37,26 @@ Now, on to git.
 
 ### Reorder last two commits
 [How to reorder last two commits in git?](https://stackoverflow.com/questions/33388210/how-to-reorder-last-two-commits-in-git)
-
 ```
 git rebase -i HEAD~2
 ```
-
 Next, change the order of the commits in the prompt.
-
 ```
 pick f4648aee My first commit
 pick 00adf09a My second commit
 ```
-
 to
-
 ```
 pick 00adf09a My second commit
 pick f4648aee My first commit
 ```
 
 ### Push all but the most recent commit
-
 ```
 git push origin HEAD^:name-of-branch
 ```
 
 ### Push all but the most recent commit and create remote branch with those commits 
-
 ```
 git push origin HEAD^:name-of-branch
 ```
@@ -71,14 +65,12 @@ git push origin HEAD^:name-of-branch
 
 Replace `<commit-hash>` with a commit hash that you obtain 
 by viewing the git log where that commit can be found.
-
 ```
 git cherry-pick <commit-hash>
 ```
 
 ### Identify files that differ between two branches
 While on a branch, comparing to a branch named `main`:
-
 ```
 git diff --name-status main
 ```
@@ -88,13 +80,11 @@ This can be useful if you don't remember what you've done, and
 you want to write a good commit message on the first go. "staged
 but not committed" means you've already executed `git add` but 
 not `git commit`.
-
 ```
 git diff --staged
 ```
 
 ### Identify merge conflicts (list of files)
-
 ```
 git diff --name-only --diff-filter=U
 ```
@@ -105,20 +95,16 @@ happening and change my mind at the last minute if needed.*
 
 Move the changes from your last commit from "committed" to "unstaged." 
 This moves the head of your current branch back one commit:
-
 ```
 git reset HEAD~1
 ```
-
 Then, discard changes in your working directory that are not staged:
-
 ```
 git checkout -- .
 ```
 
 ### Create a local version of a remote branch
 [Using git switch](https://stackoverflow.com/a/9537923/5037635)
-
 ```
 git switch <name-of-remote-branch>
 ```
@@ -197,3 +183,26 @@ it (and set -o emacs to revert).
 
 * [vim cheat sheet](http://www.viemu.com/vi-vim-cheat-sheet.gif)
 * [Vim Editor Modes Explained](https://www.freecodecamp.org/news/vim-editor-modes-explained/)
+
+## chmod
+Tool for changing the access permissions and the special mode flags of file system objects.
+
+List a file’s permissions:
+```
+ls -l /path/to/file.sh
+```
+
+Give everyone who has access to a file execution permissions:
+```
+chmod a+x /path/to/file.sh
+```
+
+* `a` means "all" users, groups, and other. `a` could be substituted for `ugo` (user, group, others).
+* `x` means "execute" permissions (permission to run a file).
+
+Give all users who have access execution permissions. (This is sufficient to allow `root` to execute a file.)
+```
+chmod u+x /path/to/file.sh
+```
+
+* Additional reading: [How to change directory permissions in Linux ](https://vendr.atlassian.net/wiki/spaces/DATA/pages/2249031686/chmod+permission+management)
