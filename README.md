@@ -141,7 +141,7 @@ git merge main
 See [this helpful tutorial](https://www.atlassian.com/git/tutorials/git-forks-and-upstreams) 
 for more details on git forks and upstreams. 
 
-### Good reading on git
+### Additional reading
 * [Stack Overflow: A good answer about reordering commits](https://stackoverflow.com/a/2740812)
 * [Stack Overflow: Undoing recent local commits](https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git)
 * [Cherry-picking commits](https://www.devroom.io/2010/06/10/cherry-picking-specific-commits-from-another-branch/)
@@ -205,4 +205,5 @@ Give all users who have access execution permissions. (This is sufficient to all
 chmod u+x /path/to/file.sh
 ```
 
-* Additional reading: [How to change directory permissions in Linux ](https://vendr.atlassian.net/wiki/spaces/DATA/pages/2249031686/chmod+permission+management)
+### Additional reading
+* [How to change directory permissions in Linux ](https://vendr.atlassian.net/wiki/spaces/DATA/pages/2249031686/chmod+permission+management)
