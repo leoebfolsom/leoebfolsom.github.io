@@ -9,7 +9,7 @@ are links on [my personal website](https://leoebfolsom.com/) that you can use to
 
 ### command line tools covered in this guide
 * [vim](#vim)
-* [vim as it inevitably pertains to git](#vim-as-it-inevitably-pertains-to-git)
+* [vim while you're using git](#vim-while-youre-using-git)
 * [git](#git)
 * [chmod](#chmod)
 
@@ -53,7 +53,7 @@ it (and set -o emacs to revert).
 * [vim cheat sheet](http://www.viemu.com/vi-vim-cheat-sheet.gif)
 * [Vim Editor Modes Explained](https://www.freecodecamp.org/news/vim-editor-modes-explained/)
 
-## vim as it inevitably pertains to git
+## vim while you're using git
 
 ### How to deal with the vim editor / file viewer while using command line
 Because even if you never use vim voluntarily, it may pop up while you’re 
