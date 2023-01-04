@@ -78,11 +78,15 @@ With all the details:
 ```
 git log
 ```
+<img width="783" alt="Screen Shot 2023-01-04 at 12 43 55 PM" src="https://user-images.githubusercontent.com/1799931/210646666-328db9ca-fdd4-4bfe-b816-72ecad558b8a.png">
+
 
 Without all that noise:
 ```
 git log --oneline
 ```
+<img width="782" alt="Screen Shot 2023-01-04 at 12 44 33 PM" src="https://user-images.githubusercontent.com/1799931/210646710-729ce848-9591-402a-8dec-892677ce19d5.png">
+
 
 
 
