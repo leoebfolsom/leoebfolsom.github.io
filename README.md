@@ -9,7 +9,7 @@ are links on [my personal website](https://leoebfolsom.com/) that you can use to
 
 ### command line tools covered in this guide
 * [vim](#vim)
-* [vim as it inevitably pertains to git](#vim-as-it-inevitably-pertains-to-git)
+* [vim while you're using git](#vim-while-youre-using-git)
 * [git](#git)
 * [chmod](#chmod)
 
@@ -18,7 +18,7 @@ I'll be updating this frequently as I learn. Tools that are missing or incomplet
 ## vim
 
 ### editor modes
-When using vim, you can either be in one of several modes. Here'll, I'll explain
+When using vim, you can either be in one of several modes. Here, I'll explain
 "insert" and "normal" modes. (I'll add others as I learn about them.)
 
 **Insert mode** is similar to the way you’d normally interact with a text editor.
@@ -53,7 +53,7 @@ it (and set -o emacs to revert).
 * [vim cheat sheet](http://www.viemu.com/vi-vim-cheat-sheet.gif)
 * [Vim Editor Modes Explained](https://www.freecodecamp.org/news/vim-editor-modes-explained/)
 
-## vim as it inevitably pertains to git
+## vim while you're using git
 
 ### How to deal with the vim editor / file viewer while using command line
 Because even if you never use vim voluntarily, it may pop up while you’re 
@@ -73,6 +73,19 @@ Now, on to git.
 
 ## git
 
+### View all commits on your branch
+With all the details:
+```
+git log
+```
+<img width="783" alt="Screen Shot 2023-01-04 at 12 43 55 PM" src="https://user-images.githubusercontent.com/1799931/210646666-328db9ca-fdd4-4bfe-b816-72ecad558b8a.png">
+
+Without all that noise:
+```
+git log --oneline
+```
+<img width="782" alt="Screen Shot 2023-01-04 at 12 44 33 PM" src="https://user-images.githubusercontent.com/1799931/210646710-729ce848-9591-402a-8dec-892677ce19d5.png">
+
 ### Reorder last two commits
 [How to reorder last two commits in git?](https://stackoverflow.com/questions/33388210/how-to-reorder-last-two-commits-in-git)
 ```
@@ -87,11 +100,6 @@ to
 ```
 pick 00adf09a My second commit
 pick f4648aee My first commit
-```
-
-### Push all but the most recent commit
-```
-git push origin HEAD^:name-of-branch
 ```
 
 ### Push all but the most recent commit and create remote branch with those commits 
