@@ -73,6 +73,19 @@ Now, on to git.
 
 ## git
 
+### View all commits on your branch
+With all the details:
+```
+git log
+```
+
+Without all that noise:
+```
+git log --oneline
+```
+
+
+
 ### Reorder last two commits
 [How to reorder last two commits in git?](https://stackoverflow.com/questions/33388210/how-to-reorder-last-two-commits-in-git)
 ```
