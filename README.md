@@ -18,7 +18,7 @@ I'll be updating this frequently as I learn. Tools that are missing or incomplet
 ## vim
 
 ### editor modes
-When using vim, you can either be in one of several modes. Here'll, I'll explain
+When using vim, you can either be in one of several modes. Here, I'll explain
 "insert" and "normal" modes. (I'll add others as I learn about them.)
 
 **Insert mode** is similar to the way you’d normally interact with a text editor.
@@ -80,15 +80,11 @@ git log
 ```
 <img width="783" alt="Screen Shot 2023-01-04 at 12 43 55 PM" src="https://user-images.githubusercontent.com/1799931/210646666-328db9ca-fdd4-4bfe-b816-72ecad558b8a.png">
 
-
 Without all that noise:
 ```
 git log --oneline
 ```
 <img width="782" alt="Screen Shot 2023-01-04 at 12 44 33 PM" src="https://user-images.githubusercontent.com/1799931/210646710-729ce848-9591-402a-8dec-892677ce19d5.png">
-
-
-
 
 ### Reorder last two commits
 [How to reorder last two commits in git?](https://stackoverflow.com/questions/33388210/how-to-reorder-last-two-commits-in-git)
@@ -104,11 +100,6 @@ to
 ```
 pick 00adf09a My second commit
 pick f4648aee My first commit
-```
-
-### Push all but the most recent commit
-```
-git push origin HEAD^:name-of-branch
 ```
 
 ### Push all but the most recent commit and create remote branch with those commits 
